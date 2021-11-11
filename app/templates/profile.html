@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container my-2">
+    <div class="card mt-2">
+        <div class="card-content">
+            <p class="title is-2 has-text-centered">
+                {% if 'active' in session: %}
+                <a class="title is-2 has-text-centered">
+                    {{session['name']}}
+                </a>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+<div class="box mt-2">
+    <h3 class="title is-4 pt-4 has-text-centered">Progreso Sustentable</h3>
+    <button class="button is-primary is-rounded">Ver mi Progreso</button>
+    
+    {% if 'active' in session: %}
+        <progress class="progress mt-4 is-large is-success" value= () max="100">80%
+
+        </progress>  
+    {% endif %}
+</div>
+<div class="container my-2">
+    <div class="card mt-2">
+        <div class="card-content">
+            <p class="title is-5">
+            “Acá está Alexis,
+            ¡Alexis y la Copa América!
+            ¡Alexis...Le Pegooó...!
+            ¡Chile Campeón!
+            ¡Chile Campeón!
+            ¡Chile Campeón!
+            ¡Chile Campeón de Copa América!
+            ¡En un partido dramático!
+            ¡En una tarde sufrida!
+            ¡No podía ser de otra forma!
+            ¡Dejamos atrás 100 años de lágrimas!
+            ¡Dejamos atrás 100 años de derrotas!
+            ¡Dejamos atrás, 100 años de robos arbritrales!
+            ¡Dejamos atrás, los años de perdedores!
+            ¡Para consagrarnos en Ñuñoa!
+            ¡Para danzar una danza frenética!
+            ¡Para celebrar de Arica a Punta Arenas!
+            ¡No lo niego! ¡Yo no vibro con la ópera!
+            ¡No lo niego no vibro con la pintura, ni con la música clásica!
+            ¡Yo vibro con ustedes, con el fútbol!
+            ¡Yo vibro con esta Roja que nos llevó a dos mundiales, yo vibro con Chile, yo vibro con esta tarde que tantas veces soñé! ¡Señoras y señores, partido terminado!
+            ¡Chile, sí, Chile, después de tantos años de sufrimiento, es el Campeón de américa!,
+            ¡En una tarde de infarto, acá en Ñuñoa!.”
+            </p>
+            <p class="subtitle is-6">
+            Claudio Palma
+            </p>
+        </div>
+        <footer class="card-footer">
+            <p class="card-footer-item">
+            <span>
+                View on <a href="https://www.youtube.com/watch?v=vv4ZM9Ts2lo">Youtube</a>
+            </span>
+            </p>
+            <p class="card-footer-item">
+            <span>
+                Share on <a href="#">Facebook</a>
+            </span>
+            </p>
+        </footer>
+        </div>
+
+{% endblock %}

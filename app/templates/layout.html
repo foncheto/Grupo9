@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conexión Sustentable</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='logo_tei.ico') }}">
+  </head>
+  <body>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <div class="container my-2">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <div class="box has-background-primary">
+                        <figure class="image is-200x200">
+                            <img src="{{url_for('static', filename='Logo_TEI.jpg')}}" alt="">
+                        </figure>
+                    </div>
+                </a>
+                <a class="navbar-item" href="/">
+                    <div class="container"> 
+                        <div class= "box">
+                            <span class="is-uppercase has-text-weight-bold is-size-6 has-text-primary">Conexión Sustentable</span>
+                        </div>
+                    </div>
+                    
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                <a href="/" class="navbar-item">
+                    Inicio
+                </a>
+                {% if 'active' in session: %}
+                <a href="/panel" class="navbar-item">
+                    Dashboard
+                </a>
+                {% endif %}
+
+                <a href="/informate" class="navbar-item">
+                    Infórmate
+                </a>
+
+                <a href="/nosotros" class="navbar-item">
+                    Nosotros
+                </a>
+
+                <a href="/contacto" class="navbar-item">
+                    Contacto
+                </a>
+
+                
+                </div>
+            
+                <div class="navbar-end">
+                <div class="navbar-item">
+                    {% if 'active' in session: %}
+                        <div class="button" href="/profile">
+                            <a class="navbar-item" href="/profile">
+                                <strong>{{session['name']}}</strong>
+                            </a>
+                        </div>
+                        <a href="/salir" class="navbar-item">
+                            Salir
+                        </a>
+                    {% else: %}
+                        <div class="buttons">
+                        <a href="/registrarme" class="button is-success">
+                            <strong>Registrarme</strong>
+                        </a>
+                        <a href="/ingresar" class="button is-light">
+                            Inicia Sesión
+                        </a>
+                        </div>
+                    {% endif %}
+                </div>
+                </div>
+            </div>
+        </nav>
+        {% block body %}
+        {% endblock %}
+    </div>
+    <footer class="footer mt-6">
+        <div class="tabs is-large">
+            <ul>
+              <li class="is-active">
+                  <a href="/">
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-home mr-3"></i>
+                        </span>
+                        <span>Inicio</span>
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    {% if 'active' in session: %}
+                    <a href="/panel" class="navbar-item">
+                        Dashboard
+                    </a>
+                    {% endif %}
+                    </li>
+                
+              <li>
+                  <a href="/informate">Infórmate</a>
+                </li>
+              <li>
+                  <a href="/nosotros">Nosotros</a>
+                </li>
+              <li>
+                <a href="/contacto">Contacto</a>
+                </li>
+            </ul>
+          </div>
+      </footer>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPP7JGTJM1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NPP7JGTJM1');
+    </script>
+    
+  </body>
+</html>

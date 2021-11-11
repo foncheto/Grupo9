@@ -1,0 +1,163 @@
+{% extends "layout.html" %}
+{% block body %}
+<section class="section">
+    <div class="container mt-0">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <div class="box has-text-centered has-background-success">
+            <a class="title is-3 has-text-white	">
+                Infórmate
+            </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="columns">
+    <div class="column">
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <article class="media">
+                      <div class="media-left">
+                        <figure class="image is-64x64 mt-4">
+                            <img src="{{url_for('static', filename='tierra.png')}}" alt="">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>Medio Ambiente</strong> <small>Actualizado hace</small> <small>2h</small>
+                            <br>
+                            <a class="title" href="/informate/medio-ambiente">
+                                Principales Formas de Ayudar al Medio Ambiente
+                            </a>
+                            
+                            </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <article class="media">
+                      <div class="media-left">
+                        <figure class="image is-64x64 mt-3">
+                            <img src="{{url_for('static', filename='warning.png')}}" alt="">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>Cifras</strong> <small>Actualizado hace</small> <small>13h</small>
+                            <br>
+                            <a class="title" href="/informate/consumo-irresponsable">
+                                Datos sobre el Consumo Irresponsable
+                            </a>
+                            
+                            </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <article class="media">
+                      <div class="media-left">
+                        <figure class="image is-64x64 mt-5">
+                            <img src="{{url_for('static', filename='casa.png')}}" alt="">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>Consumo Responsable</strong> <small>Actualizado hace</small> <small>39m</small>
+                            <br>
+                            <a class="title" href="/informate/domestico">
+                                Consumo Doméstico Responsable
+                            </a>
+                            
+                            </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <article class="media">
+                      <div class="media-left">
+                        <figure class="image is-64x64 mt-3">
+                            <img src="{{url_for('static', filename='factory.png')}}" alt="">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>Consumo Responsable</strong> <small>Actualizado hace</small> <small>13m</small>
+                            <br>
+                            <a class="title" href="/informate/industrial">
+                                Consumo Industrial Responsable
+                            </a>
+                            </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column" >
+                <div class="box">
+                    <article class="media" >
+                      <div class="media-left">
+                        <figure class="image is-64x64 mt-3">
+                            <img src="{{url_for('static', filename='localizador.png')}}" alt="">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>Reciclaje</strong> <small>Actualizado hace</small> <small>33m</small>
+                            <br>
+                            <a href="/informate/localizador" class="title">
+                                Localizador de Puntos de Reciclaje
+                            </a>
+                            </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <article class="media">
+                      <div class="media-left">
+                        <figure class="image is-64x64 mt-3 mb-4">
+                            <img src="{{url_for('static', filename='pregunta.png')}}" alt="">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>Misceláneo</strong> <small>Actualizado hace </small> <small>45s</small>
+                            <br>
+                            <a class="title" href="/informate/FAQ">
+                                Preguntas Frecuentes
+                            </a>
+                            
+                            </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

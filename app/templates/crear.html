@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block body %}
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<section class="section">
+    <div class="container mt-0">
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+            <form class="box">
+                <div class="has-text-centered">
+                    <a class="title is-3">
+                        Crear Publicación
+                    </a>
+                </div>
+                <div class="field mt-3">
+                  <label class="label">Título</label>
+                  <div class="control">
+                    <input class="input" type="titulo" placeholder="Cómo comenzar con mi primera compostera">
+                  </div>
+                </div>          
+                <div class="control has-icons-left mt-4 mb-3">
+                    <div class="select">
+                      <select>
+                        <option selected>Categoría</option>
+                        <option>Reciclaje</option>
+                        <option>Compostaje</option>
+                        <option>Veganismo</option>
+                        <option>Salud</option>
+                        <option>Vida Cotidiana</option>
+                        <option>Ahorro</option>
+                        <option>Reseña</option>
+                        <option>Misceláneo</option>
+                      </select>
+                    </div>
+                    <div class="icon is-small is-left">
+                      <i class="fas fa-tags"></i>
+                    </div>
+                  </div>
+                <div class="field">
+                  <label class="label">Cuerpo</label>
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Lorem Ipsum" rows="10"></textarea>
+                  </div>
+                </div>
+                <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="resume">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Agregar archivos...
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                <button class="button is-primary mt-3">Publicar</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

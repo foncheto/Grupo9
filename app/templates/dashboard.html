@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+{% block body %}
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <div class="box has-text-centered has-background-success">
+          <a class="title is-3 has-text-white">
+              Foro
+          </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="columns">
+    <div class="column">
+      <div class="columns">
+        <div class="column is-two-thirds ml-5">
+        <article class="panel is-dark">
+            <p class="panel-heading">
+              Participa!
+            </p>
+            <a class="panel-block is-active" href="/panel/crear">
+              <span class="panel-icon">
+                <i class="fas fa-pencil-ruler" aria-hidden="true"></i>
+              </span>
+              Crear Publicación
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-align-justify aria-hidden="true"></i>
+              </span>
+              Mis Publicaciones
+            </a>
+        </article>
+        </div>
+      </div>
+      <div class="columns">
+          <div class="column is-two-thirds ml-5">
+          <article class="panel is-info">
+              <p class="panel-heading">
+                Temas
+              </p>
+              <a class="panel-block is-active">
+                <span class="panel-icon">
+                  <i class="fas fa-clock" aria-hidden="true"></i>
+                </span>
+                Recientes
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-fire" aria-hidden="true"></i>
+                </span>
+                Populares
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-user-friends" aria-hidden="true"></i>
+                </span>
+                Reseñas
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                </span>
+                Anuncios
+              </a>
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                Otros
+              </a>
+          </article>
+          </div>
+      </div>
+    </div>
+    <div class="column is-three-fifths mr-6">
+      <article class="panel is-success">
+        <p class="panel-heading has-text-centered">
+          Discusión General
+        </p>
+        <div class="panel-block">
+          <p class="control has-icons-left">
+            <input class="input is-info" type="text" placeholder="Search">
+            <span class="icon is-left">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </span>
+          </p>
+        </div>
+        <p class="panel-tabs">
+          <a class="is-active">All</a>
+          <a>General</a>
+          <a>Private</a>
+          <a>Sources</a>
+          <a>Forks</a>
+        </p>
+        <a class="panel-block is-active">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          bulma
+        </a>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          marksheet
+        </a>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          minireset.css
+        </a>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          jgthms.github.io
+        </a>
+      </article>
+    </div>
+</div>
+{% endblock %}
